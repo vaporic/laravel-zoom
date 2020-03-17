@@ -1,9 +1,9 @@
 <?php
 
-namespace MacsiDigital\Zoom\Interfaces;
+namespace vaporic\Zoom\Interfaces;
 
 use Exception;
-use MacsiDigital\Zoom\Support\Response;
+use vaporic\Zoom\Support\Response;
 
 abstract class Base
 {

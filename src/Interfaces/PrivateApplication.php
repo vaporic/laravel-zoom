@@ -1,8 +1,8 @@
 <?php
 
-namespace MacsiDigital\Zoom\Interfaces;
+namespace vaporic\Zoom\Interfaces;
 
-use MacsiDigital\Zoom\Support\Request;
+use vaporic\Zoom\Support\Request;
 
 class PrivateApplication extends Base
 {

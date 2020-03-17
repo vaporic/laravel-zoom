@@ -1,8 +1,8 @@
 {
-    "name": "macsidigital/laravel-zoom",
+    "name": "vaporic/laravel-zoom",
     "description": "Laravel Zoom package",
-    "homepage": "https://github.com/MacsiDigital/laravel-zoom",
-    "keywords": ["macsidigital", "laravel-zoom", "zoom", "laravel", "api", "client"],
+    "homepage": "https://github.com/vaporic/laravel-zoom",
+    "keywords": ["vaporic", "laravel-zoom", "zoom", "laravel", "api", "client"],
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -16,7 +16,7 @@
         "php": "^7.2", 
         "guzzlehttp/guzzle": "~6.0|~5.0|~4.0",
         "firebase/php-jwt": "^5.0",
-        "illuminate/support": "^6.0"
+        "illuminate/support": "^5.2"
     },
     "require-dev": {
         "orchestra/testbench": "^4.0",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MacsiDigital\\Zoom\\": "src"
+            "vaporic\\Zoom\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MacsiDigital\\Zoom\\Tests\\": "tests"
+            "vaporic\\Zoom\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -43,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MacsiDigital\\Zoom\\Providers\\ZoomServiceProvider"
+                "vaporic\\Zoom\\Providers\\ZoomServiceProvider"
             ],
             "aliases": {
-                "Zoom": "MacsiDigital\\Zoom\\Facades\\Zoom"
+                "Zoom": "vaporic\\Zoom\\Facades\\Zoom"
             }
         }
     },

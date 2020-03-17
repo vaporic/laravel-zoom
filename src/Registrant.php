@@ -1,9 +1,9 @@
 <?php
 
-namespace MacsiDigital\Zoom;
+namespace vaporic\Zoom;
 
 use Exception;
-use MacsiDigital\Zoom\Support\Model;
+use vaporic\Zoom\Support\Model;
 
 class Registrant extends Model
 {

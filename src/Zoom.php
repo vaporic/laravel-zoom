@@ -1,10 +1,10 @@
 <?php
 
-namespace MacsiDigital\Zoom;
+namespace vaporic\Zoom;
 
 use Exception;
 use Illuminate\Support\Str;
-use MacsiDigital\Zoom\Interfaces\PrivateApplication;
+use vaporic\Zoom\Interfaces\PrivateApplication;
 
 class Zoom
 {
@@ -37,7 +37,7 @@ class Zoom
 
     public function getNode($key)
     {
-        $class = 'MacsiDigital\Zoom\\'.Str::studly($key);
+        $class = 'vaporic\Zoom\\'.Str::studly($key);
         if (class_exists($class)) {
             return new $class();
         }

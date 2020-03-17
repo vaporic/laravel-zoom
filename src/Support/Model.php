@@ -1,10 +1,10 @@
 <?php
 
-namespace MacsiDigital\Zoom\Support;
+namespace vaporic\Zoom\Support;
 
 use Exception;
 use Illuminate\Support\Collection;
-use MacsiDigital\Zoom\Facades\Zoom;
+use vaporic\Zoom\Facades\Zoom;
 
 abstract class Model
 {

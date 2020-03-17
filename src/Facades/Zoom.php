@@ -1,6 +1,6 @@
 <?php
 
-namespace MacsiDigital\Zoom\Facades;
+namespace vaporic\Zoom\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

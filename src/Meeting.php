@@ -1,9 +1,9 @@
 <?php
 
-namespace MacsiDigital\Zoom;
+namespace vaporic\Zoom;
 
 use Exception;
-use MacsiDigital\Zoom\Support\Model;
+use vaporic\Zoom\Support\Model;
 
 class Meeting extends Model
 {
@@ -67,9 +67,9 @@ class Meeting extends Model
     ];
 
     protected $relationships = [
-        'settings' => '\MacsiDigital\Zoom\MeetingSetting',
-        'recurrance' => '\MacsiDigital\Zoom\Recurrance',
-        'tracking_fields' => '\MacsiDigital\Zoom\TrackingFields',
+        'settings' => '\vaporic\Zoom\MeetingSetting',
+        'recurrance' => '\vaporic\Zoom\Recurrance',
+        'tracking_fields' => '\vaporic\Zoom\TrackingFields',
     ];
 
     public function addTrackingField(TrackingField $tracking_field)
@@ -170,7 +170,7 @@ class Meeting extends Model
 
     public function registrants()
     {
-        $registrant = new \MacsiDigital\Zoom\Registrant;
+        $registrant = new \vaporic\Zoom\Registrant;
         $registrant->setType('meetings');
         $registrant->setRelationshipID($this->getID());
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace MacsiDigital\Zoom;
+namespace vaporic\Zoom;
 
 use Exception;
-use MacsiDigital\Zoom\Support\Model;
+use vaporic\Zoom\Support\Model;
 
 class Webinar extends Model
 {
@@ -58,10 +58,10 @@ class Webinar extends Model
     ];
 
     protected $relationships = [
-        'settings' => '\MacsiDigital\Zoom\WebinarSetting',
-        'recurrance' => '\MacsiDigital\Zoom\Recurrance',
-        'occurances' => '\MacsiDigital\Zoom\Occurance',
-        'tracking_fields' => '\MacsiDigital\Zoom\TrackingFields',
+        'settings' => '\vaporic\Zoom\WebinarSetting',
+        'recurrance' => '\vaporic\Zoom\Recurrance',
+        'occurances' => '\vaporic\Zoom\Occurance',
+        'tracking_fields' => '\vaporic\Zoom\TrackingFields',
     ];
 
     public function addTrackingField(TrackingField $tracking_field)
@@ -169,7 +169,7 @@ class Webinar extends Model
 
     public function registrants()
     {
-        $registrant = new \MacsiDigital\Zoom\Registrant;
+        $registrant = new \vaporic\Zoom\Registrant;
         $registrant->setType('webinars');
         $registrant->setRelationshipID($this->getID());
 
@@ -178,7 +178,7 @@ class Webinar extends Model
 
     public function panelists()
     {
-        $panelist = new \MacsiDigital\Zoom\Panelist;
+        $panelist = new \vaporic\Zoom\Panelist;
         $panelist->setWebinarID($this->getID());
 
         return $panelist;

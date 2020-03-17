@@ -1,9 +1,9 @@
 <?php
 
-namespace MacsiDigital\Zoom;
+namespace vaporic\Zoom;
 
 use Exception;
-use MacsiDigital\Zoom\Support\Model;
+use vaporic\Zoom\Support\Model;
 
 class User extends Model
 {
@@ -94,7 +94,7 @@ class User extends Model
 
     public function meetings()
     {
-        $meeting = new \MacsiDigital\Zoom\Meeting;
+        $meeting = new \vaporic\Zoom\Meeting;
         $meeting->setUserID($this->getID());
 
         return $meeting;
@@ -102,7 +102,7 @@ class User extends Model
 
     public function webinars()
     {
-        $webinar = new \MacsiDigital\Zoom\Webinar;
+        $webinar = new \vaporic\Zoom\Webinar;
         $webinar->setUserID($this->getID());
 
         return $webinar;

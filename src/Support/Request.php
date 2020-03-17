@@ -1,6 +1,6 @@
 <?php
 
-namespace MacsiDigital\Zoom\Support;
+namespace vaporic\Zoom\Support;
 
 use Exception;
 use Firebase\JWT\JWT;

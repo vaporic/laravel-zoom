@@ -1,8 +1,8 @@
 <?php
 
-namespace MacsiDigital\Zoom;
+namespace vaporic\Zoom;
 
-use MacsiDigital\Zoom\Support\Model;
+use vaporic\Zoom\Support\Model;
 
 class MeetingSetting extends Model
 {
@@ -81,7 +81,7 @@ class MeetingSetting extends Model
     ];
 
     protected $relationships = [
-        'global_dial_in_numbers' => '\MacsiDigital\Zoom\GlobalDialInNumber',
+        'global_dial_in_numbers' => '\vaporic\Zoom\GlobalDialInNumber',
     ];
 
     public function addGlobalDialInNumbers(GlobalDialInNumber $number)

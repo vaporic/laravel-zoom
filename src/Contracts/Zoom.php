@@ -1,6 +1,6 @@
 <?php
 
-namespace MacsiDigital\Zoom\Contracts;
+namespace vaporic\Zoom\Contracts;
 
 interface Zoom
 {
